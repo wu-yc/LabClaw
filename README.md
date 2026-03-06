@@ -43,31 +43,9 @@ LabClaw-git/
 
 ## How to Use
 
-Each `SKILL.md` file is a self-contained instruction set for an AI agent. Pick any skill and paste its contents into your agent's system prompt.
+Send the following message to OpenClaw:
 
-**Option 1 — System prompt (any LLM)**
-
-```python
-import openai, pathlib
-
-skill = pathlib.Path("skills/bio/scanpy/SKILL.md").read_text()
-client = openai.OpenAI()
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[
-        {"role": "system", "content": skill},
-        {"role": "user",   "content": "Analyze my scRNA-seq data in data.h5ad"}
-    ]
-)
-```
-
-**Option 2 — Claude Projects / Custom GPTs**
-
-Upload any `SKILL.md` as a knowledge file in your Claude Project or Custom GPT.
-
-**Option 3 — Cursor / Windsurf / Copilot**
-
-Place any `SKILL.md` into `.cursor/skills/` (or equivalent) for automatic loading in your IDE agent.
+> **`install https://github.com/YOUR_USERNAME/LabClaw-git`**
 
 ---
 
@@ -501,7 +479,7 @@ Every `SKILL.md` follows a consistent structure:
 
 ## Credits
 
-Skills curated by Yingcheng (Charles) Wu @Stanford
+Skills curated by Yingcheng (Charles) Wu @Stanford.
 
 ---
 
