@@ -5,7 +5,8 @@
 **A production-ready OpenClaw skill library for autonomous biomedical research**
 
 [![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
-[![Biology](https://img.shields.io/badge/🧬_biology-73-brightgreen?style=flat-square)](skills/bio/)
+[![Biology](https://img.shields.io/badge/🧬_biology-66-brightgreen?style=flat-square)](skills/bio/)
+[![LabOS](https://img.shields.io/badge/🤖_labos-7-cyan?style=flat-square)](skills/labos/)
 [![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
 [![Medicine](https://img.shields.io/badge/🏥_medicine-20-red?style=flat-square)](skills/med/)
 [![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
@@ -31,7 +32,8 @@ The collection is designed for researchers who want a practical, modular skill l
 
 | Domain | Skills | Focus |
 |--------|-------:|-------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **73** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases, lab platforms |
+| [🧬 Biology & Life Sciences](skills/bio/) | **66** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases |
+| [🤖 LabOS & Automation](skills/labos/) | **7** | Lab robots, LIMS/ELN, cloud platforms, protocol management |
 | [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | Cheminformatics, molecular ML, docking, target research, pharmacology, drug databases |
 | [🏥 Medical & Clinical](skills/med/) | **20** | Clinical trials, precision medicine, oncology, infectious disease, medical imaging |
 | [⚙️ General & Data Science](skills/general/) | **48** | Statistics, machine learning, data management, visualization, scientific writing |
@@ -63,7 +65,8 @@ LabClaw/
 ├── README.md
 ├── README.zh-CN.md
 └── skills/
-    ├── bio/         # 73 skills: genomics, proteomics, single-cell, systems biology, lab platforms
+    ├── bio/         # 66 skills: genomics, proteomics, single-cell, systems biology
+    ├── labos/       # 7 skills: lab robots, LIMS/ELN, cloud platforms, protocols
     ├── pharma/      # 36 skills: cheminformatics, docking, target discovery, pharmacology
     ├── med/         # 20 skills: clinical research, precision medicine, oncology, imaging
     ├── general/     # 48 skills: statistics, ML, visualization, writing, reproducibility
@@ -87,11 +90,11 @@ The original catalog is preserved below, but grouped into collapsible sections t
 ---
 
 <details>
-<summary><strong>🧬 Biology & Life Sciences — 73 skills</strong></summary>
+<summary><strong>🧬 Biology & Life Sciences — 66 skills</strong></summary>
 
 > Tools for genomics, transcriptomics, proteomics, single-cell analysis, structural biology, systems biology, and lab automation.
 
-**73 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
+**66 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
 
 #### Bioinformatics Core
 
@@ -107,8 +110,6 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`gget`](skills/bio/gget/SKILL.md) | Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold str... |
 | [`gtars`](skills/bio/gtars/SKILL.md) | High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when working with genomic regio... |
 | [`hypogenic`](skills/bio/hypogenic/SKILL.md) | Automated LLM-driven hypothesis generation and testing on tabular datasets. Use when you want to systematically explore ... |
-| [`opentrons-integration`](skills/bio/opentrons-integration/SKILL.md) | Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware... |
-| [`protocolsio-integration`](skills/bio/protocolsio-integration/SKILL.md) | Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protoco... |
 | [`scikit-bio`](skills/bio/scikit-bio/SKILL.md) | Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ord... |
 
 #### Single-cell & Spatial Transcriptomics
@@ -122,17 +123,18 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-single-cell`](skills/bio/tooluniverse-single-cell/SKILL.md) | Production-ready single-cell and expression matrix analysis using scanpy, anndata, and scipy. Performs scRNA-seq QC, nor... |
 | [`tooluniverse-spatial-omics-analysis`](skills/bio/tooluniverse-spatial-omics-analysis/SKILL.md) | Computational analysis framework for spatial multi-omics data integration. Given spatially variable genes (SVGs), spatia... |
 | [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) | Analyze spatial transcriptomics data to map gene expression in tissue architecture. Supports 10x Visium, MERFISH, seqFIS... |
+| [`umap-learn`](skills/bio/umap-learn/SKILL.md) | UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data. |
 
 #### Genomics, NGS & Variant Analysis
 
 | Skill | Description |
 |-------|-------------|
 | [`deeptools`](skills/bio/deeptools/SKILL.md) | NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for... |
-| [`dnanexus-integration`](skills/bio/dnanexus-integration/SKILL.md) | DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FAS... |
 | [`pydeseq2`](skills/bio/pydeseq2/SKILL.md) | Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR corre... |
 | [`pysam`](skills/bio/pysam/SKILL.md) | Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calc... |
 | [`tooluniverse-crispr-screen-analysis`](skills/bio/tooluniverse-crispr-screen-analysis/SKILL.md) | Comprehensive CRISPR screen analysis for functional genomics. Analyze pooled or arrayed CRISPR screens (knockout, activa... |
 | [`tooluniverse-epigenomics`](skills/bio/tooluniverse-epigenomics/SKILL.md) | Production-ready genomics and epigenomics data processing for BixBench questions. Handles methylation array analysis (Cp... |
+| [`tooluniverse-expression-data-retrieval`](skills/bio/tooluniverse-expression-data-retrieval/SKILL.md) | Retrieves gene expression and omics datasets from ArrayExpress and BioStudies with gene disambiguation, experiment quality assessment, and structured reports. Creates comprehensive dataset profiles with metadata, sample information, and download links. Use when users need expression data, omics datasets, or mention ArrayExpress (E-MTAB, E-GEOD) or BioStudies (S-BSST) accessions. |
 | [`tooluniverse-gene-enrichment`](skills/bio/tooluniverse-gene-enrichment/SKILL.md) | Perform comprehensive gene enrichment and pathway analysis using gseapy (ORA and GSEA), PANTHER, STRING, Reactome, and 4... |
 | [`tooluniverse-gwas-drug-discovery`](skills/bio/tooluniverse-gwas-drug-discovery/SKILL.md) | Transform GWAS signals into actionable drug targets and repurposing opportunities. Performs locus-to-gene mapping, targe... |
 | [`tooluniverse-gwas-finemapping`](skills/bio/tooluniverse-gwas-finemapping/SKILL.md) | Identify and prioritize causal variants at GWAS loci using statistical fine-mapping and locus-to-gene predictions. Compu... |
@@ -189,15 +191,47 @@ The original catalog is preserved below, but grouped into collapsible sections t
 
 | Skill | Description |
 |-------|-------------|
-| [`benchling-integration`](skills/bio/benchling-integration/SKILL.md) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Be... |
 | [`flowio`](skills/bio/flowio/SKILL.md) | Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to C... |
 | [`histolab`](skills/bio/histolab/SKILL.md) | Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, sta... |
-| [`labarchive-integration`](skills/bio/labarchive-integration/SKILL.md) | Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with ... |
 | [`lamindb`](skills/bio/lamindb/SKILL.md) | This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable... |
-| [`latchbio-integration`](skills/bio/latchbio-integration/SKILL.md) | Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverle... |
 | [`omero-integration`](skills/bio/omero-integration/SKILL.md) | Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotation... |
 | [`pathml`](skills/bio/pathml/SKILL.md) | Full-featured computational pathology toolkit. Use for advanced WSI analysis including multiplexed immunofluorescence (C... |
-| [`pylabrobot`](skills/bio/pylabrobot/SKILL.md) | Vendor-agnostic lab automation framework. Use when controlling multiple equipment types (Hamilton, Tecan, Opentrons, pla... |
+
+</details>
+
+<details>
+<summary><strong>🤖 LabOS & Laboratory Automation — 7 skills</strong></summary>
+
+> Tools for lab robotics, LIMS/ELN systems, cloud platforms, and scientific protocol management. Optimized for Stanford LabOS workflows and automated laboratory research.
+
+**7 skills** &nbsp;·&nbsp; [`skills/labos/`](skills/labos/)
+
+#### Lab Robotics & Automation
+
+| Skill | Description |
+|-------|-------------|
+| [`pylabrobot`](skills/bio/pylabrobot/SKILL.md) | Vendor-agnostic lab automation framework. Use when controlling multiple equipment types (Hamilton, Tecan, Opentrons, plate readers, pumps) or needing unified programming across different vendors. Best for complex workflows, multi-vendor setups, simulation. |
+| [`opentrons-integration`](skills/bio/opentrons-integration/SKILL.md) | Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. |
+
+#### LIMS/ELN Systems
+
+| Skill | Description |
+|-------|-------------|
+| [`benchling-integration`](skills/bio/benchling-integration/SKILL.md) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, for lab data management automation. |
+| [`labarchive-integration`](skills/bio/labarchive-integration/SKILL.md) | Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with laboratory workflows, for ELN automation. |
+
+#### Lab Cloud Platforms
+
+| Skill | Description |
+|-------|-------------|
+| [`latchbio-integration`](skills/bio/latchbio-integration/SKILL.md) | Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless bioinformatics apps, for cloud bioinformatics. |
+| [`dnanexus-integration`](skills/bio/dnanexus-integration/SKILL.md) | DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/CRAM processing, for cloud genomic analysis. |
+
+#### Protocol Management
+
+| Skill | Description |
+|-------|-------------|
+| [`protocolsio-integration`](skills/bio/protocolsio-integration/SKILL.md) | Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protoco... |
 
 </details>
 
@@ -331,6 +365,7 @@ The original catalog is preserved below, but grouped into collapsible sections t
 
 | Skill | Description |
 |-------|-------------|
+| [`matlab`](skills/general/matlab/SKILL.md) | MATLAB and GNU Octave numerical computing for matrix operations, data analysis, visualization, and scientific computing. Use when writing MATLAB/Octave scripts for linear algebra, signal processing, image processing, differential equations, optimization, statistics, or creating scientific visualizations. Also use when the user needs help with MATLAB syntax, functions, or wants to convert between MATLAB and Python code. Scripts can be executed with MATLAB or the open-source GNU Octave interpreter. |
 | [`pymc`](skills/general/pymc/SKILL.md) | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posteri... |
 | [`pymoo`](skills/general/pymoo/SKILL.md) | Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, ... |
 | [`scikit-survival`](skills/general/scikit-survival/SKILL.md) | Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill w... |
