@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**A production-ready OpenClaw skill library for autonomous biomedical research**
+**为 OpenClaw 提供 206 个面向生物医学自主研究的生产级技能**
 
 [![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
 [![Biology](https://img.shields.io/badge/🧬_biology-73-brightgreen?style=flat-square)](skills/bio/)
@@ -12,44 +12,44 @@
 [![Literature](https://img.shields.io/badge/📚_literature-29-purple?style=flat-square)](skills/literature/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
-**English** · [简体中文](README.zh-CN.md)
+[English](README.md) · **简体中文**
 
 </div>
 
 > [!NOTE]
-> LabClaw is a skill library, not a monolithic software package. You can install the full collection or copy only the skill folders that match your research workflows.
+> LabClaw 是一个技能库，而不是单体软件包。你可以整体使用，也可以只挑选与你的研究流程相关的技能文件夹。
 
 ---
 
-## Overview
+## 项目简介
 
-LabClaw packages **206 production-ready `SKILL.md` files** for biomedical AI workflows across biology, drug discovery, medicine, data science, and literature research. Each skill teaches an OpenClaw-compatible agent **when** to use a tool, **how** to call it, and **what kind of output** to produce.
+LabClaw 将 **206 个生产级 `SKILL.md` 文件** 按照生物学、药物发现、医学、数据科学与文献检索等方向进行组织，供 OpenClaw 兼容代理在生物医学研究中直接调用。每个技能都会告诉代理：**何时使用**、**如何调用**、以及**应该产出什么结果**。
 
-The collection is designed for researchers who want a practical, modular skill layer instead of a generic prompt bundle. You can use it as a broad starter library, or cherry-pick only the subfolders relevant to your lab, team, or project.
+这个仓库适合希望为代理提供可复用、可组合、面向研究任务的技能层的用户，而不是仅靠通用提示词完成复杂科研流程的场景。你可以把它当作完整的起始技能库，也可以只选用与你的实验室、项目或团队相关的部分。
 
-## At a Glance
+## 一览
 
-| Domain | Skills | Focus |
-|--------|-------:|-------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **73** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases, lab platforms |
-| [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | Cheminformatics, molecular ML, docking, target research, pharmacology, drug databases |
-| [🏥 Medical & Clinical](skills/med/) | **20** | Clinical trials, precision medicine, oncology, infectious disease, medical imaging |
-| [⚙️ General & Data Science](skills/general/) | **48** | Statistics, machine learning, data management, visualization, scientific writing |
-| [📚 Literature & Search](skills/literature/) | **29** | Academic search, biomedical databases, multi-source discovery, patents, grants, citations |
+| 领域 | 技能数 | 重点方向 |
+|------|------:|----------|
+| [🧬 Biology & Life Sciences](skills/bio/) | **73** | 生物信息学、单细胞、基因组学、蛋白质组学、多组学、数据库、实验平台 |
+| [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | 化学信息学、分子机器学习、对接、靶点研究、药理学、药物数据库 |
+| [🏥 Medical & Clinical](skills/med/) | **20** | 临床试验、精准医疗、肿瘤学、传染病、医学影像 |
+| [⚙️ General & Data Science](skills/general/) | **48** | 统计分析、机器学习、数据管理、可视化、科学写作 |
+| [📚 Literature & Search](skills/literature/) | **29** | 学术检索、生物医学数据库、多源发现、专利、基金、引文 |
 
-## Representative Workflows
+## 代表性工作流
 
-| Workflow | Example skills |
-|----------|----------------|
-| Single-cell and spatial omics | [`anndata`](skills/bio/anndata/SKILL.md), [`scanpy`](skills/bio/scanpy/SKILL.md), [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) |
-| Drug discovery and molecular design | [`rdkit`](skills/pharma/rdkit/SKILL.md), [`diffdock`](skills/pharma/diffdock/SKILL.md), [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) |
-| Clinical and precision medicine | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/literature/clinicaltrials-database/SKILL.md) |
-| Statistics, ML, and figure generation | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) |
-| Literature review and reporting | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/general/scientific-writing/SKILL.md) |
+| 工作流 | 示例技能 |
+|--------|----------|
+| 单细胞与空间组学 | [`anndata`](skills/bio/anndata/SKILL.md), [`scanpy`](skills/bio/scanpy/SKILL.md), [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) |
+| 药物发现与分子设计 | [`rdkit`](skills/pharma/rdkit/SKILL.md), [`diffdock`](skills/pharma/diffdock/SKILL.md), [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) |
+| 临床与精准医疗 | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/literature/clinicaltrials-database/SKILL.md) |
+| 统计分析、机器学习与图形生成 | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) |
+| 文献综述与科研写作 | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/general/scientific-writing/SKILL.md) |
 
-## Quick Start
+## 快速开始
 
-OpenClaw loads workspace skills from `<workspace>/skills`. A practical setup is:
+OpenClaw 会从 `<workspace>/skills` 加载 workspace skills。一个直接可用的方式是：
 
 ```bash
 git clone https://github.com/wu-yc/LabClaw.git
@@ -57,48 +57,49 @@ mkdir -p ~/.openclaw/workspace/skills
 cp -R LabClaw/skills/* ~/.openclaw/workspace/skills/
 ```
 
-Then start a **new OpenClaw session** so the skill folders are picked up. If you already keep your workspace in git, merge only the folders you want rather than copying the full library.
+随后请启动一个**新的 OpenClaw 会话**，让这些技能目录被重新识别。如果你已经用 git 管理自己的 workspace，建议只合并需要的子文件夹，而不是无差别复制整个技能库。
 
-## Repository Layout
+## 仓库结构
 
 ```text
 LabClaw/
 ├── README.md
 ├── README.zh-CN.md
 └── skills/
-    ├── bio/         # 73 skills: genomics, proteomics, single-cell, systems biology, lab platforms
-    ├── pharma/      # 36 skills: cheminformatics, docking, target discovery, pharmacology
-    ├── med/         # 20 skills: clinical research, precision medicine, oncology, imaging
-    ├── general/     # 48 skills: statistics, ML, visualization, writing, reproducibility
-    └── literature/  # 29 skills: search, databases, grants, patents, citations
+    ├── bio/         # 73 个技能：基因组学、蛋白质组学、单细胞、系统生物学、实验平台
+    ├── pharma/      # 36 个技能：化学信息学、分子对接、靶点发现、药理学
+    ├── med/         # 20 个技能：临床研究、精准医疗、肿瘤学、影像
+    ├── general/     # 48 个技能：统计、机器学习、可视化、写作、可复现性
+    └── literature/  # 29 个技能：检索、数据库、基金、专利、引文
 ```
 
-## Related Repositories
+## 相关仓库
 
-These projects are especially relevant if you want to place LabClaw in the broader biomedical-agent ecosystem:
+如果你希望把 LabClaw 放到更大的生物医学代理生态中理解，下面这些仓库最值得一起阅读：
 
-| Repository | Why it matters |
-|------------|----------------|
-| [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | The main runtime that loads workspace skills and provides the skills platform, onboarding flow, and agent workspace model that LabClaw is designed to fit into. |
-| [`mims-harvard/ToolUniverse`](https://github.com/mims-harvard/ToolUniverse) | A large AI-scientist tool ecosystem. LabClaw includes many `tooluniverse-*` skills across omics, drug discovery, clinical workflows, and literature research. |
-| [`snap-stanford/Biomni`](https://github.com/snap-stanford/Biomni) | A complementary biomedical AI agent project. LabClaw already includes a `biomni` skill, making Biomni a natural reference point for users exploring autonomous biomedical research agents. |
+| 仓库 | 关联原因 |
+|------|----------|
+| [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | 这是承载技能运行的主平台。LabClaw 的目录结构与使用方式就是围绕 OpenClaw 的 skills platform、onboarding 流程与 agent workspace 模型设计的。 |
+| [`mims-harvard/ToolUniverse`](https://github.com/mims-harvard/ToolUniverse) | 一个面向 AI scientist 的大型工具生态。LabClaw 在组学、药物研究、临床和文献工作流中包含了大量 `tooluniverse-*` 技能。 |
+| [`snap-stanford/Biomni`](https://github.com/snap-stanford/Biomni) | 一个互补的生物医学 AI 代理项目。LabClaw 已经提供 `biomni` 技能，因此 Biomni 是理解相关能力边界和生态定位时非常自然的参考仓库。 |
 
-## Full Skill Catalog
+## 技能目录
 
-The original catalog is preserved below, but grouped into collapsible sections to make browsing easier on GitHub.
+> [!TIP]
+> 为了与目录路径、技能文件名以及上游工具名称保持一致，下方的技能标识符保持英文；大部分具体描述也保留原始英文，便于直接对应到各个 `SKILL.md` 文件。
 
 ---
 
 <details>
-<summary><strong>🧬 Biology & Life Sciences — 73 skills</strong></summary>
+<summary><strong>🧬 Biology & Life Sciences（生命科学与生物学） — 73 个技能</strong></summary>
 
-> Tools for genomics, transcriptomics, proteomics, single-cell analysis, structural biology, systems biology, and lab automation.
+> 面向基因组学、转录组学、蛋白质组学、单细胞分析、结构生物学、系统生物学与实验自动化的工具。
 
-**73 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
+**73 个技能** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
 
-#### Bioinformatics Core
+#### 生物信息学基础
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`arboreto`](skills/bio/arboreto/SKILL.md) | Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when ... |
 | [`bioinformatics`](skills/bio/bioinformatics/SKILL.md) | Computational biology and genomics analysis pipelines. GENERAL: not locked to any specific tool — use Scanpy, Seurat, DE... |
@@ -114,9 +115,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`protocolsio-integration`](skills/bio/protocolsio-integration/SKILL.md) | Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protoco... |
 | [`scikit-bio`](skills/bio/scikit-bio/SKILL.md) | Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ord... |
 
-#### Single-cell & Spatial Transcriptomics
+#### 单细胞与空间转录组
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`anndata`](skills/bio/anndata/SKILL.md) | Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the... |
 | [`cellxgene-census`](skills/bio/cellxgene-census/SKILL.md) | Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or... |
@@ -126,9 +127,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-spatial-omics-analysis`](skills/bio/tooluniverse-spatial-omics-analysis/SKILL.md) | Computational analysis framework for spatial multi-omics data integration. Given spatially variable genes (SVGs), spatia... |
 | [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) | Analyze spatial transcriptomics data to map gene expression in tissue architecture. Supports 10x Visium, MERFISH, seqFIS... |
 
-#### Genomics, NGS & Variant Analysis
+#### 基因组学、NGS 与变异分析
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`deeptools`](skills/bio/deeptools/SKILL.md) | NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for... |
 | [`dnanexus-integration`](skills/bio/dnanexus-integration/SKILL.md) | DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FAS... |
@@ -150,9 +151,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-variant-analysis`](skills/bio/tooluniverse-variant-analysis/SKILL.md) | Production-ready VCF processing, variant annotation, mutation analysis, and structural variant (SV/CNV) interpretation f... |
 | [`tooluniverse-variant-interpretation`](skills/bio/tooluniverse-variant-interpretation/SKILL.md) | Systematic clinical variant interpretation from raw variant calls to ACMG-classified recommendations with structural imp... |
 
-#### Proteomics & Structural Biology
+#### 蛋白质组学与结构生物学
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`alphafold-database`](skills/bio/alphafold-database/SKILL.md) | Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, ana... |
 | [`esm`](skills/bio/esm/SKILL.md) | Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, ... |
@@ -162,9 +163,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-proteomics-analysis`](skills/bio/tooluniverse-proteomics-analysis/SKILL.md) | Analyze mass spectrometry proteomics data including protein quantification, differential expression, post-translational ... |
 | [`uniprot-database`](skills/bio/uniprot-database/SKILL.md) | Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflow... |
 
-#### Multi-Omics & Systems Biology
+#### 多组学与系统生物学
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`matchms`](skills/bio/matchms/SKILL.md) | Spectral similarity and compound identification for metabolomics. Use for comparing mass spectra, computing similarity s... |
 | [`tooluniverse-metabolomics`](skills/bio/tooluniverse-metabolomics/SKILL.md) | Comprehensive metabolomics research skill for identifying metabolites, analyzing studies, and searching metabolomics dat... |
@@ -174,9 +175,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-phylogenetics`](skills/bio/tooluniverse-phylogenetics/SKILL.md) | Production-ready phylogenetics and sequence analysis skill for alignment processing, tree analysis, and evolutionary met... |
 | [`tooluniverse-systems-biology`](skills/bio/tooluniverse-systems-biology/SKILL.md) | Comprehensive systems biology and pathway analysis using multiple pathway databases (Reactome, KEGG, WikiPathways, Pathw... |
 
-#### Biological Databases
+#### 生物数据库
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`brenda-database`](skills/bio/brenda-database/SKILL.md) | Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, a... |
 | [`clinpgx-database`](skills/bio/clinpgx-database/SKILL.md) | Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele func... |
@@ -188,9 +189,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`reactome-database`](skills/bio/reactome-database/SKILL.md) | Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions... |
 | [`string-database`](skills/bio/string-database/SKILL.md) | Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment... |
 
-#### Lab Platforms & Imaging
+#### 实验平台与成像
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`benchling-integration`](skills/bio/benchling-integration/SKILL.md) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Be... |
 | [`flowio`](skills/bio/flowio/SKILL.md) | Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to C... |
@@ -205,15 +206,15 @@ The original catalog is preserved below, but grouped into collapsible sections t
 </details>
 
 <details>
-<summary><strong>💊 Pharmacy & Drug Discovery — 36 skills</strong></summary>
+<summary><strong>💊 Pharmacy & Drug Discovery（药学与药物发现） — 36 个技能</strong></summary>
 
-> Tools for cheminformatics, molecular docking, drug design, pharmacology, pharmacovigilance, and drug databases.
+> 面向化学信息学、分子对接、药物设计、药理学、药物警戒与药物数据库的工具。
 
-**36 skills** &nbsp;·&nbsp; [`skills/pharma/`](skills/pharma/)
+**36 个技能** &nbsp;·&nbsp; [`skills/pharma/`](skills/pharma/)
 
-#### Cheminformatics & Molecular Design
+#### 化学信息学与分子设计
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`chemistry`](skills/pharma/chemistry/SKILL.md) | Computational chemistry, cheminformatics, and drug discovery workflows. |
 | [`datamol`](skills/pharma/datamol/SKILL.md) | Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery inc... |
@@ -223,17 +224,17 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`rdkit`](skills/pharma/rdkit/SKILL.md) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprin... |
 | [`rowan`](skills/pharma/rowan/SKILL.md) | Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa pr... |
 
-#### Molecular Machine Learning
+#### 分子机器学习
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`pytdc`](skills/pharma/pytdc/SKILL.md) | Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecula... |
 | [`torch_geometric`](skills/pharma/torch_geometric/SKILL.md) | Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, mole... |
 | [`torchdrug`](skills/pharma/torchdrug/SKILL.md) | PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug dis... |
 
-#### Molecular Docking & Protein Therapeutics
+#### 分子对接与蛋白治疗
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`adaptyv`](skills/pharma/adaptyv/SKILL.md) | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experime... |
 | [`diffdock`](skills/pharma/diffdock/SKILL.md) | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual scre... |
@@ -241,18 +242,18 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-binder-discovery`](skills/pharma/tooluniverse-binder-discovery/SKILL.md) | Discover novel small molecule binders for protein targets using structure-based and ligand-based approaches. Creates act... |
 | [`tooluniverse-protein-therapeutic-design`](skills/pharma/tooluniverse-protein-therapeutic-design/SKILL.md) | Design novel protein therapeutics (binders, enzymes, scaffolds) using AI-guided de novo design. Uses RFdiffusion for bac... |
 
-#### Drug Research & Target Discovery
+#### 药物研究与靶点发现
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) | Identify drug repurposing candidates using ToolUniverse for target-based, compound-based, and disease-driven strategies.... |
 | [`tooluniverse-drug-research`](skills/pharma/tooluniverse-drug-research/SKILL.md) | Generates comprehensive drug research reports with compound disambiguation, evidence grading, and mandatory completeness... |
 | [`tooluniverse-drug-target-validation`](skills/pharma/tooluniverse-drug-target-validation/SKILL.md) | Comprehensive computational validation of drug targets for early-stage drug discovery. Evaluates targets across 10 dimen... |
 | [`tooluniverse-target-research`](skills/pharma/tooluniverse-target-research/SKILL.md) | Gather comprehensive biological target intelligence from 9 parallel research paths covering protein info, structure, int... |
 
-#### Pharmacology & Safety
+#### 药理学与安全性
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`tooluniverse-adverse-event-detection`](skills/pharma/tooluniverse-adverse-event-detection/SKILL.md) | Detect and analyze adverse drug event signals using FDA FAERS data, drug labels, disproportionality analysis (PRR, ROR, ... |
 | [`tooluniverse-chemical-safety`](skills/pharma/tooluniverse-chemical-safety/SKILL.md) | Comprehensive chemical safety and toxicology assessment integrating ADMET-AI predictions, CTD toxicogenomics, FDA label ... |
@@ -260,9 +261,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-network-pharmacology`](skills/pharma/tooluniverse-network-pharmacology/SKILL.md) | Construct and analyze compound-target-disease networks for drug repurposing, polypharmacology discovery, and systems pha... |
 | [`tooluniverse-pharmacovigilance`](skills/pharma/tooluniverse-pharmacovigilance/SKILL.md) | Analyze drug safety signals from FDA adverse event reports, label warnings, and pharmacogenomic data. Calculates disprop... |
 
-#### Chemical & Drug Databases
+#### 化学与药物数据库
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`chembl-database`](skills/pharma/chembl-database/SKILL.md) | Query ChEMBL bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity... |
 | [`chembl-search`](skills/pharma/chembl-search/SKILL.md) | Search ChEMBL bioactive molecules database with natural language queries. Find compounds and assay data with Valyu seman... |
@@ -280,15 +281,15 @@ The original catalog is preserved below, but grouped into collapsible sections t
 </details>
 
 <details>
-<summary><strong>🏥 Medical & Clinical — 20 skills</strong></summary>
+<summary><strong>🏥 Medical & Clinical（医学与临床） — 20 个技能</strong></summary>
 
-> Tools for clinical research, precision medicine, oncology, infectious disease, and medical imaging.
+> 面向临床研究、精准医疗、肿瘤学、传染病与医学影像的工具。
 
-**20 skills** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
+**20 个技能** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
 
-#### Clinical Research & Trials
+#### 临床研究与试验
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`clinical`](skills/med/clinical/SKILL.md) | Clinical study design, statistical analysis, and regulatory compliance for medical research. |
 | [`clinical-decision-support`](skills/med/clinical-decision-support/SKILL.md) | Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical research settings, inclu... |
@@ -298,9 +299,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-clinical-trial-matching`](skills/med/tooluniverse-clinical-trial-matching/SKILL.md) | AI-driven patient-to-trial matching for precision medicine and oncology. Given a patient profile (disease, molecular alt... |
 | [`treatment-plans`](skills/med/treatment-plans/SKILL.md) | Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports ... |
 
-#### Precision Medicine & Oncology
+#### 精准医疗与肿瘤学
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`tooluniverse-cancer-variant-interpretation`](skills/med/tooluniverse-cancer-variant-interpretation/SKILL.md) | Provide comprehensive clinical interpretation of somatic mutations in cancer. Given a gene symbol + variant (e.g., EGFR ... |
 | [`tooluniverse-disease-research`](skills/med/tooluniverse-disease-research/SKILL.md) | Generate comprehensive disease research reports using 100+ ToolUniverse tools. Creates a detailed markdown report file a... |
@@ -310,9 +311,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md) | Provide actionable treatment recommendations for cancer patients based on molecular profile. Interprets tumor mutations,... |
 | [`tooluniverse-rare-disease-diagnosis`](skills/med/tooluniverse-rare-disease-diagnosis/SKILL.md) | Provide differential diagnosis for patients with suspected rare diseases based on phenotype and genetic data. Matches sy... |
 
-#### Medical Imaging, Devices & Regulatory
+#### 医学影像、器械与监管
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`iso-13485-certification`](skills/med/iso-13485-certification/SKILL.md) | Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems.... |
 | [`neurokit2`](skills/med/neurokit2/SKILL.md) | Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and ... |
@@ -324,15 +325,15 @@ The original catalog is preserved below, but grouped into collapsible sections t
 </details>
 
 <details>
-<summary><strong>⚙️ General & Data Science — 48 skills</strong></summary>
+<summary><strong>⚙️ General & Data Science（通用与数据科学） — 48 个技能</strong></summary>
 
-> General-purpose tools for statistics, machine learning, data management, visualization, and scientific writing.
+> 面向统计分析、机器学习、数据管理、可视化与科学写作的通用工具。
 
-**48 skills** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
+**48 个技能** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
 
-#### Statistics & Mathematical Modeling
+#### 统计学与数学建模
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`pymc`](skills/general/pymc/SKILL.md) | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posteri... |
 | [`pymoo`](skills/general/pymoo/SKILL.md) | Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, ... |
@@ -343,9 +344,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`sympy`](skills/general/sympy/SKILL.md) | Use this skill when working with symbolic mathematics in Python. This skill should be used for symbolic computation task... |
 | [`tooluniverse-statistical-modeling`](skills/general/tooluniverse-statistical-modeling/SKILL.md) | Perform statistical modeling and regression analysis on biomedical datasets. Supports linear regression, logistic regres... |
 
-#### Machine Learning & AI
+#### 机器学习与 AI
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`aeon`](skills/general/aeon/SKILL.md) | This skill should be used for time series machine learning tasks including classification, regression, clustering, forec... |
 | [`pytorch-lightning`](skills/general/pytorch-lightning/SKILL.md) | Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-G... |
@@ -353,9 +354,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`shap`](skills/general/shap/SKILL.md) | Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining mac... |
 | [`transformers`](skills/general/transformers/SKILL.md) | This skill should be used when working with pre-trained transformer models for natural language processing, computer vis... |
 
-#### Data Management & Computing
+#### 数据管理与计算
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`dask`](skills/general/dask/SKILL.md) | Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code ... |
 | [`exploratory-data-analysis`](skills/general/exploratory-data-analysis/SKILL.md) | Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be ... |
@@ -369,9 +370,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`vaex`](skills/general/vaex/SKILL.md) | Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex ex... |
 | [`zarr-python`](skills/general/zarr-python/SKILL.md) | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible,... |
 
-#### Visualization
+#### 可视化
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`matplotlib`](skills/general/matplotlib/SKILL.md) | Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creat... |
 | [`plotly`](skills/general/plotly/SKILL.md) | Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboard... |
@@ -380,9 +381,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`seaborn`](skills/general/seaborn/SKILL.md) | Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and catego... |
 | [`visualization`](skills/general/visualization/SKILL.md) | Publication-quality scientific figure generation. GENERAL: language-agnostic (R, Python, Julia, or any tool). |
 
-#### Scientific Writing & Presentation
+#### 科学写作与展示
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`article-writing`](skills/general/article-writing/SKILL.md) | Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice der... |
 | [`hypothesis-generation`](skills/general/hypothesis-generation/SKILL.md) | Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to for... |
@@ -400,9 +401,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`venue-templates`](skills/general/venue-templates/SKILL.md) | Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publicatio... |
 | [`writing`](skills/general/writing/SKILL.md) | Scientific manuscript writing across all formats, fields, and journals. |
 
-#### IP, Regulatory & Reporting
+#### 知识产权、监管与报告
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`patent-drafting`](skills/general/patent-drafting/SKILL.md) | Draft patent applications for scientific inventions, covering claims, specification, and prior art analysis. |
 | [`regulatory-submission`](skills/general/regulatory-submission/SKILL.md) | Prepare regulatory submissions for drugs, biologics, devices, and diagnostics. |
@@ -410,15 +411,15 @@ The original catalog is preserved below, but grouped into collapsible sections t
 </details>
 
 <details>
-<summary><strong>📚 Literature & Search — 29 skills</strong></summary>
+<summary><strong>📚 Literature & Search（文献与检索） — 29 个技能</strong></summary>
 
-> Tools for academic search, database queries, citation management, and literature review.
+> 面向学术检索、数据库查询、引文管理与综述写作的工具。
 
-**29 skills** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
+**29 个技能** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
 
-#### Biomedical Literature Search
+#### 生物医学文献检索
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`academic-literature-search`](skills/literature/academic-literature-search/SKILL.md) | Use this skill when the user asks to search for academic papers, retrieve literature, generate citations, format referen... |
 | [`biomedical-search`](skills/literature/biomedical-search/SKILL.md) | Complete biomedical information search combining PubMed, preprints, clinical trials, and FDA drug labels. Powered by Val... |
@@ -432,9 +433,9 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md) | Search PubMed biomedical literature with natural language queries powered by Valyu semantic search. Full-text access, in... |
 | [`tooluniverse-literature-deep-research`](skills/literature/tooluniverse-literature-deep-research/SKILL.md) | Conduct comprehensive literature research with target disambiguation, evidence grading, and structured theme extraction.... |
 
-#### Genomic & Clinical Databases
+#### 基因组与临床数据库
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`clinical-trials-search`](skills/literature/clinical-trials-search/SKILL.md) | Search ClinicalTrials.gov with natural language queries. Find clinical trials, enrollment, and outcomes using Valyu sema... |
 | [`clinicaltrials-database`](skills/literature/clinicaltrials-database/SKILL.md) | Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase. Retrieve trial detail... |
@@ -446,18 +447,18 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | [`openalex-database`](skills/literature/openalex-database/SKILL.md) | Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academi... |
 | [`pdb-database`](skills/literature/pdb-database/SKILL.md) | Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmC... |
 
-#### Multi-Source Search & Discovery
+#### 多源检索与发现
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`arxiv-search`](skills/literature/arxiv-search/SKILL.md) | Search arXiv physics, math, and computer science preprints using natural language queries. Powered by Valyu semantic sea... |
 | [`bioservices`](skills/literature/bioservices/SKILL.md) | Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Re... |
 | [`perplexity-search`](skills/literature/perplexity-search/SKILL.md) | Perform AI-powered web searches with real-time information using Perplexity models via LiteLLM and OpenRouter. This skil... |
 | [`research-lookup`](skills/literature/research-lookup/SKILL.md) | Look up current research information using Perplexity Sonar Pro Search or Sonar Reasoning Pro models through OpenRouter.... |
 
-#### Patents, Grants & Citation Management
+#### 专利、基金与引文管理
 
-| Skill | Description |
+| 技能 | 说明 |
 |-------|-------------|
 | [`citation-management`](skills/literature/citation-management/SKILL.md) | Comprehensive citation management for academic research. Search Google Scholar and PubMed for papers, extract accurate m... |
 | [`patents-search`](skills/literature/patents-search/SKILL.md) | Search global patents with natural language queries. Prior art, patent landscapes, and innovation tracking via Valyu. |
@@ -469,19 +470,19 @@ The original catalog is preserved below, but grouped into collapsible sections t
 
 ---
 
-## Skill Format
+## `SKILL.md` 结构
 
-Every `SKILL.md` follows a consistent structure:
+每个 `SKILL.md` 基本遵循统一结构：
 
 ```markdown
 # Skill Name
-## Overview        — what this skill enables
-## When to Use     — trigger conditions for the AI agent
-## Key Capabilities — specific tools, APIs, parameters
-## Usage Examples  — concrete code or workflow examples
+## Overview        — 这个技能解决什么问题
+## When to Use     — 触发条件与适用场景
+## Key Capabilities — 关键能力、工具、API 与参数
+## Usage Examples  — 典型用法与工作流示例
 ```
 
-## Credits
+## 致谢
 
 Skills curated by Yingcheng (Charles) Wu at Le Cong Lab of Stanford & Mengdi Wang Lab at Princeton.
 
