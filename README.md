@@ -60,6 +60,14 @@ install https://github.com/wu-yc/LabClaw
 <p align="center"> <img src="./install_demo.gif" alt="Install Demo" width="30%"> </p>
 
 
+
+## Use Cases
+
+In Lab (with XR):
+<p align="center"> <img src="./inlab.gif" alt="Install Demo" width="30%"> </p>
+
+
+
 ## Repository Layout
 
 ```text
