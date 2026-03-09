@@ -2,6 +2,10 @@
 
 <div align="center">
 
+<p align="center">
+  <img src="Weixin Image_20260308180016_466_6307.png" alt="LabClaw Logo" width="100">
+</p>
+
 **Powering dry-lab reasoning, protocol composition, and agentic workflows to close the loop with LabOS XR/wet-lab execution.**
 
 [![Skills](https://img.shields.io/badge/skills-211-blue?style=flat-square)](skills/)
@@ -18,8 +22,7 @@
 
 </div>
 
-> [!NOTE]
-> LabClaw is a skill library, not a monolithic software package. You can install the full collection or copy only the skill folders that match your research workflows.
+LabClaw is a skill library, not a monolithic software package. You can install the full collection or copy only the skill folders that match your research workflows.
 
 ---
 
