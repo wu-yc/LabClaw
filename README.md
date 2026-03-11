@@ -18,7 +18,7 @@
 [![Literature](https://img.shields.io/badge/📚_literature-29-purple?style=flat-square)](skills/literature/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
-**English** · [简体中文](README.zh-CN.md)
+**English** · [简体中文](README.zh-CN.md)  · [Project](https://labclaw-ai.github.io/)
 
 </div>
 
